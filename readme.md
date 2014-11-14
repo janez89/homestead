@@ -22,7 +22,7 @@ MySQL access: root, vagrant
 
 ## Install
 
-Add Vagrant box: `vagrant box add laravel/homestead`
+Add Vagrant box: `vagrant box add janez89/percise32`
 
 Clone repository: `git clone https://github.com/janez89/homestead.git Homestead`
 
