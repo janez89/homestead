@@ -1,7 +1,7 @@
 class Homestead
   def Homestead.configure(config, settings)
     # Configure The Box
-    config.vm.box = "hashicorp/precise32"
+    config.vm.box = "janez89/precise32"
     config.vm.hostname = "homestead"
 
     # Configure A Private Network IP
