@@ -9,12 +9,12 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/Projects
-      to: /home/vagrant/Projects
+    - map: ~/Code
+      to: /home/vagrant/Code
 
 sites:
     - map: homestead.app
-      to: /home/vagrant/Projects/Laravel/public
+      to: /home/vagrant/Code/Laravel/public
 
 variables:
     - key: APP_ENV
