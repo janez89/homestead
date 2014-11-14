@@ -1,7 +1,7 @@
 class Homestead
   def Homestead.configure(config, settings)
     # Configure The Box
-    config.vm.box = "laravel/homestead"
+    config.vm.box = "hashicorp/precise32"
     config.vm.hostname = "homestead"
 
     # Configure A Private Network IP
@@ -10,7 +10,7 @@ class Homestead
     # Configure A Few VirtualBox Settings
     config.vm.provider "virtualbox" do |vb|
       vb.name = 'homestead'
-      vb.customize ["modifyvm", :id, "--memory", settings["memory"] ||= "2048"]
+      vb.customize ["modifyvm", :id, "--memory", settings["memory"] ||= "1024"]
       vb.customize ["modifyvm", :id, "--cpus", settings["cpus"] ||= "1"]
       vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
       vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
