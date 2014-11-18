@@ -24,6 +24,8 @@ MySQL access: root, vagrant
 
 Add Vagrant box: `vagrant box add janez89/precise32`
 
+Or
+
 Clone repository: `git clone https://github.com/janez89/homestead.git Homestead`
 
 Generate SSH key for login and edit `Homestead.yaml`
